@@ -13,6 +13,7 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	coreutils
 BuildRequires:	libtool
+BuildRequires:	pkgconfig
 BuildRequires:	sphinx-pdg
 # Modified (with bson allocator and some warning fixes and huge indentation
 # refactoring) jsonsl is bundled <https://github.com/mnunberg/jsonsl>.
