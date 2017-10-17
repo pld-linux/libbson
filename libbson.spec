@@ -106,6 +106,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_docdir}/%{name}-devel
 %{_includedir}/libbson-1.0
 %{_libdir}/libbson-1.0.so
-%{_libdir}/cmake
+%{_libdir}/cmake/libbson-1.0
 %{_pkgconfigdir}/libbson-1.0.pc
 %{_mandir}/man3/bson_*.3*
