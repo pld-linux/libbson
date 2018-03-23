@@ -1,0 +1,22 @@
+--- libbson-1.9.3/doc/man/Makefile.am~	2018-01-10 21:46:11.000000000 +0200
++++ libbson-1.9.3/doc/man/Makefile.am	2018-03-23 13:01:20.545955400 +0200
+@@ -10,7 +10,7 @@
+ # sphinx-build "-E" is "ignore cache", "b" is build type.
+ doc/man:
+ 	-mkdir -p doc/man
+-	$(SPHINX_BUILD) -qEW -j 8 -b man $(top_srcdir)/doc doc/man
++	$(SPHINX_BUILD) -qE -j 8 -b man $(top_srcdir)/doc doc/man
+ 	rm -rf doc/man/.doctrees doc/man/.buildinfo
+ 
+ EXTRA_DIST += doc/man
+--- libbson-1.9.3/doc/html/Makefile.am~	2018-01-10 21:46:11.000000000 +0200
++++ libbson-1.9.3/doc/html/Makefile.am	2018-03-23 13:01:25.692895926 +0200
+@@ -18,7 +18,7 @@
+ # sphinx-build "-E" is "ignore cache".
+ $(SPHINX_HTML_FILES):
+ 	-mkdir -p doc/html
+-	$(SPHINX_BUILD) -j 8 -qEW $(top_srcdir)/doc doc/html
++	$(SPHINX_BUILD) -j 8 -qE $(top_srcdir)/doc doc/html
+ 	rm -rf doc/html/.doctrees doc/html/.buildinfo
+ 
+ EXTRA_DIST += doc/html

@@ -7,6 +7,7 @@ Group:		Libraries
 Source0:	https://github.com/mongodb/libbson/releases/download/%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	b3c1f643d3134d493099497397ffafe5
 Patch0:		%{name}-1.5.0-rc3-Install-documentation-according-to-guidelines.patch
+Patch1:		sphinx-no-fatal-warn.patch
 URL:		https://github.com/mongodb/libbson
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -38,6 +39,7 @@ applications that use %{name}.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 # Remove pregenerated documentation
 rm -r doc/html/_static doc/html/*.{html,inv,js} doc/man/*.3
