@@ -1,11 +1,11 @@
 Summary:	Building, parsing, and iterating BSON documents
 Name:		libbson
-Version:	1.8.0
+Version:	1.8.2
 Release:	1
 License:	ASL 2.0 and ISC and MIT and zlib
 Group:		Libraries
 Source0:	https://github.com/mongodb/libbson/releases/download/%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	8b3c64570eec721f951831958e707a5a
+# Source0-md5:	3c34637e6914a989dd5440d0f57dc2f4
 # Do not install COPYING, install ChangeLog, distribution specific
 Patch0:		%{name}-1.5.0-rc3-Install-documentation-according-to-guidelines.patch
 URL:		https://github.com/mongodb/libbson
