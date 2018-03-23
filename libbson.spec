@@ -1,12 +1,11 @@
 Summary:	Building, parsing, and iterating BSON documents
 Name:		libbson
-Version:	1.8.2
+Version:	1.9.3
 Release:	1
 License:	ASL 2.0 and ISC and MIT and zlib
 Group:		Libraries
 Source0:	https://github.com/mongodb/libbson/releases/download/%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	3c34637e6914a989dd5440d0f57dc2f4
-# Do not install COPYING, install ChangeLog, distribution specific
+# Source0-md5:	b3c1f643d3134d493099497397ffafe5
 Patch0:		%{name}-1.5.0-rc3-Install-documentation-according-to-guidelines.patch
 URL:		https://github.com/mongodb/libbson
 BuildRequires:	autoconf
@@ -65,7 +64,7 @@ rm -r doc/html/_static doc/html/*.{html,inv,js} doc/man/*.3
 	--enable-shared \
 	--disable-silent-rules \
 	--disable-static \
-	--enable-tests
+	%{?with_tests:--enable-tests}
 
 # Explicit man target is needed for generating manual pages.
 # If you produced HTML pages be ware doc/conf.py injects tracking JavaScript
