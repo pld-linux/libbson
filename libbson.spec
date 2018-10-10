@@ -1,11 +1,11 @@
 Summary:	Building, parsing, and iterating BSON documents
 Name:		libbson
-Version:	1.9.3
+Version:	1.9.5
 Release:	1
 License:	ASL 2.0 and ISC and MIT and zlib
 Group:		Libraries
 Source0:	https://github.com/mongodb/libbson/releases/download/%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	b3c1f643d3134d493099497397ffafe5
+# Source0-md5:	716127054644aec0cf751a2c0c7693b1
 Patch0:		%{name}-1.5.0-rc3-Install-documentation-according-to-guidelines.patch
 Patch1:		sphinx-no-fatal-warn.patch
 URL:		https://github.com/mongodb/libbson
