@@ -1,8 +1,9 @@
+# NOTE: for newer versions see mongo-c-driver.spec
 Summary:	Building, parsing, and iterating BSON documents
 Summary(pl.UTF-8):	Tworzenie, analiza i przechodzenie dokumentów BSON
 Name:		libbson
 Version:	1.9.5
-Release:	2
+Release:	2.1
 License:	Apache v2.0 and ISC and MIT and zlib
 Group:		Libraries
 #Source0Download: https://github.com/mongodb/libbson/releases/
